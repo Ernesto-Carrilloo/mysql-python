@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const addProducto = async (producto) => {
-        await fetch('https://milepeletay123.pythonanywhere.com/nuevo_producto', {
+        await fetch('https://milepeletay123.pythonanywhere.com/nuevo_producto', { //
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const updateProducto = async (id, producto) => {
-        await fetch(`https://milepeletay123.pythonanywhere.com/actualizar_producto/${id}`, {
+        await fetch(`https://milepeletay123.pythonanywhere.com/actualizar_producto/${id}`, { //
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const deleteProducto = async (id) => {
-        await fetch(`https://milepeletay123.pythonanywhere.com/eliminar_producto/${id}`, {
+        await fetch(`https://milepeletay123.pythonanywhere.com/eliminar_producto/${id}`, { //
             method: 'DELETE'
         });
         fetchProductos();
