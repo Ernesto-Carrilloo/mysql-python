@@ -16,7 +16,7 @@ def ver_productos():
         host='ernestocarrillo.pythonanywhere.com',
         user='ernestocarrillo', #mi usuario
         password='codoacodo123777', #mi contraseña
-        database='sys' #nombre de la base de datos
+        database='ernestocarrillo$tienda' #nombre de la base de datos
     )
 
     cursor = db.cursor(dictionary=True) #en lugar de tener una lista con tuplas, tener un diccionario con clave(campo) y valor(dato)
@@ -38,7 +38,7 @@ def eliminar_producto(id):
         host='ernestocarrillo.pythonanywhere.com',
         user='ernestocarrillo', #mi usuario
         password='codoacodo123777', #mi contraseña
-        database='sys' #nombre de la base de datos
+        database='ernestocarrillo$tienda' #nombre de la base de datos
     )
 
     cursor = db.cursor()
@@ -60,7 +60,7 @@ def crear_producto():
         host='ernestocarrillo.pythonanywhere.com',
         user='ernestocarrillo', #mi usuario
         password='codoacodo123777', #mi contraseña
-        database='sys' #nombre de la base de datos
+        database='ernestocarrillo$tienda' #nombre de la base de datos
     )
 
     cursor = db.cursor()
@@ -83,7 +83,7 @@ def modificar_producto(id):
         host='ernestocarrillo.pythonanywhere.com',
         user='ernestocarrillo', #mi usuario
         password='codoacodo123777', #mi contraseña
-        database='sys' #nombre de la base de datos
+        database='ernestocarrillo$tienda' #nombre de la base de datos
     )
 
     cursor = db.cursor()
