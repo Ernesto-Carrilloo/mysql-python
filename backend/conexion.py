@@ -13,10 +13,10 @@ CORS(app)
 @app.route('/productos', methods=['GET'])
 def ver_productos():
     db = mysql.connector.connect(
-        host='milepeletay13gg.mysql.pythonanywhere-services.com',
-        user='milepeletay13gg', #mi usuario
-        password='milonka90', #mi contraseña
-        database='milepeletay13gg$comercio' #nombre de la base de datos
+        host='ernestocarrillo.pythonanywhere.com',
+        user='ernestocarrillo', #mi usuario
+        password='codoacodo123777', #mi contraseña
+        database='sys' #nombre de la base de datos
     )
 
     cursor = db.cursor(dictionary=True) #en lugar de tener una lista con tuplas, tener un diccionario con clave(campo) y valor(dato)
@@ -35,10 +35,10 @@ def ver_productos():
 @app.route('/eliminar_producto/<int:id>', methods=['DELETE'])
 def eliminar_producto(id):
     db = mysql.connector.connect(
-        host='milepeletay13gg.mysql.pythonanywhere-services.com',
-        user='milepeletay13gg', #mi usuario
-        password='milonka90', #mi contraseña
-        database='milepeletay13gg$comercio' #nombre de la base de datos
+        host='ernestocarrillo.pythonanywhere.com',
+        user='ernestocarrillo', #mi usuario
+        password='codoacodo123777', #mi contraseña
+        database='sys' #nombre de la base de datos
     )
 
     cursor = db.cursor()
@@ -57,10 +57,10 @@ def crear_producto():
     info = { "nombre": "monitor", "cantidad": 45 , "precio":100500}
     '''
     db = mysql.connector.connect(
-        host='milepeletay13gg.mysql.pythonanywhere-services.com',
-        user='milepeletay13gg', #mi usuario
-        password='milonka90', #mi contraseña
-        database='milepeletay13gg$comercio' #nombre de la base de datos
+        host='ernestocarrillo.pythonanywhere.com',
+        user='ernestocarrillo', #mi usuario
+        password='codoacodo123777', #mi contraseña
+        database='sys' #nombre de la base de datos
     )
 
     cursor = db.cursor()
@@ -80,10 +80,10 @@ def modificar_producto(id):
     info = { "nombre": "monitor", "categoria": 45 , "precio":100500}
     '''
     db = mysql.connector.connect(
-        host='milepeletay13gg.mysql.pythonanywhere-services.com',
-        user='milepeletay13gg', #mi usuario
-        password='milonka90', #mi contraseña
-        database='milepeletay13gg$comercio' #nombre de la base de datos
+        host='ernestocarrillo.pythonanywhere.com',
+        user='ernestocarrillo', #mi usuario
+        password='codoacodo123777', #mi contraseña
+        database='sys' #nombre de la base de datos
     )
 
     cursor = db.cursor()
