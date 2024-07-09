@@ -13,7 +13,7 @@ CORS(app)
 @app.route('/productos', methods=['GET'])
 def ver_productos():
     db = mysql.connector.connect(
-        host='ernestocarrillo.pythonanywhere.com',
+        host='ernestocarrillo.mysql.pythonanywhere-services.com',
         user='ernestocarrillo', #mi usuario
         password='codoacodo123777', #mi contraseña
         database='ernestocarrillo$tienda' #nombre de la base de datos
@@ -35,7 +35,7 @@ def ver_productos():
 @app.route('/eliminar_producto/<int:id>', methods=['DELETE'])
 def eliminar_producto(id):
     db = mysql.connector.connect(
-        host='ernestocarrillo.pythonanywhere.com',
+        host='ernestocarrillo.mysql.pythonanywhere-services.com',
         user='ernestocarrillo', #mi usuario
         password='codoacodo123777', #mi contraseña
         database='ernestocarrillo$tienda' #nombre de la base de datos
@@ -57,7 +57,7 @@ def crear_producto():
     info = { "nombre": "monitor", "cantidad": 45 , "precio":100500}
     '''
     db = mysql.connector.connect(
-        host='ernestocarrillo.pythonanywhere.com',
+        host='ernestocarrillo.mysql.pythonanywhere-services.com',
         user='ernestocarrillo', #mi usuario
         password='codoacodo123777', #mi contraseña
         database='ernestocarrillo$tienda' #nombre de la base de datos
@@ -80,7 +80,7 @@ def modificar_producto(id):
     info = { "nombre": "monitor", "categoria": 45 , "precio":100500}
     '''
     db = mysql.connector.connect(
-        host='ernestocarrillo.pythonanywhere.com',
+        host='ernestocarrillo.mysql.pythonanywhere-services.com',
         user='ernestocarrillo', #mi usuario
         password='codoacodo123777', #mi contraseña
         database='ernestocarrillo$tienda' #nombre de la base de datos
