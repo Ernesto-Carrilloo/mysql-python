@@ -6,15 +6,6 @@ app = Flask(__name__)
 CORS(app)
 
 
-@app.after_request
-def after_request_func(response):
-    origin = request.headers.get('Origin')
-    if request.method == 'OPTIONS':
-        response = make_response()
-        response.headers.add('Access-Control-Allow-Credentials', 'true')
-        response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
-        response.headers.add('Access-Control-Allow-Headers', 'x-csrf-token')
-        response.headers.add('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE')
 
 
 #get -> consultar
