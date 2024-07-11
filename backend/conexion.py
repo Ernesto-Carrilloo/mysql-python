@@ -53,7 +53,7 @@ def eliminar_producto(id):
 def crear_producto():
     info = request.json
     '''
-    info = { "nombre": "monitor", "cantidad": 45 , "precio":100500}
+    info = { "nombre": "Kiwi", "cantidad": 45 , "precio":11}
     '''
     db = mysql.connector.connect(
         host='ernestocarrillo.mysql.pythonanywhere-services.com',
@@ -76,7 +76,7 @@ def crear_producto():
 def modificar_producto(id):
     info = request.json
     '''
-    info = { "nombre": "monitor", "categoria": 45 , "precio":100500}
+    info = { "nombre": "Naranja", "categoria": 33 , "precio":2}
     '''
     db = mysql.connector.connect(
         host='ernestocarrillo.mysql.pythonanywhere-services.com',
