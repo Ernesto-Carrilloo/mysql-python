@@ -63,7 +63,7 @@ def crear_producto():
     )
 
     cursor = db.cursor()
-    cursor.execute("INSERT INTO productos(nombre,cantidad,precio) VALUES(%s,%s,%s)", (info["nombre"],info["cantidad"],info["precio"])) #("monitor", 45 , 100500)
+    cursor.execute("INSERT INTO productos(nombre,cantidad,precio) VALUES(%s,%s,%s)", (info["nombre"],info["cantidad"],info["precio"])) 
 
     db.commit()
     cursor.close()
@@ -86,7 +86,7 @@ def modificar_producto(id):
     )
 
     cursor = db.cursor()
-    cursor.execute("UPDATE productos SET nombre= %s, cantidad= %s, precio= %s WHERE id = %s", (info["nombre"],info["cantidad"],info["precio"] , id)) #("monitor", 45 , 100500)
+    cursor.execute("UPDATE productos SET nombre= %s, cantidad= %s, precio= %s WHERE id = %s", (info["nombre"],info["cantidad"],info["precio"] , id)) 
 
     db.commit()
     cursor.close()

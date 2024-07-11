@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const addProducto = async (producto) => {
-        await fetch('https://ernestocarrillo.pythonanywhere.com/nuevo_producto', { //
+        await fetch('https://ernestocarrillo.pythonanywhere.com/agregar_producto', { //
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
